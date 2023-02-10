@@ -1,0 +1,9 @@
+name: "Cyberbullying"
+version: "1"
+main: "vb.$cyberbullying.PluginMain"
+api-version: 1.13
+authors: [KevlarProps]
+description: "Gives you an L on death."
+prefix: "cyb"
+commands:
+permissions:

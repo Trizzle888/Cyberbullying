@@ -1,0 +1,43 @@
+{
+  "plugin.dependencies": "",
+  "plugin.load-before": "",
+  "plugin.version": "1",
+  "debug-build-mode": false,
+  "open-tab": 0,
+  "plugin-components": [{
+    "children": [{
+      "=": "org.bukkit.World#dropItem(org.bukkit.Location,org.bukkit.inventory.ItemStack)",
+      "parameters": [
+        {
+          "=": "org.bukkit.entity.Entity#getWorld()",
+          "parameters": [{"=": "org.bukkit.event.player.PlayerRespawnEvent#getPlayer()"}]
+        },
+        {
+          "=": "org.bukkit.entity.Entity#getLocation()",
+          "parameters": [{"=": "org.bukkit.event.player.PlayerRespawnEvent#getPlayer()"}]
+        },
+        {
+          "=": "expr-new-named-item",
+          "parameters": [
+            {"=": "org.bukkit.Material#CLOCK"},
+            {
+              "=": "expr-string",
+              "parameters": ["RETARD!"]
+            }
+          ]
+        }
+      ]
+    }],
+    "=": "org.bukkit.event.player.PlayerRespawnEvent",
+    "parameters": ["NORMAL"]
+  }],
+  "plugin.soft-dependencies": "",
+  "plugin.name": "Cyberbullying",
+  "plugin.prefix": "cyb",
+  "current-plugin-component": 0,
+  "plugin.author": "KevlarProps",
+  "plugin.description": "Gives you an L on death.",
+  "plugin.permissions": "",
+  "open-plugin-components": [0],
+  "plugin.website": ""
+}
